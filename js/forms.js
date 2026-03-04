@@ -11,11 +11,12 @@ var DV_WORDPRESS_URL = 'https://deverhuizing.nl';
     div.textContent = message;
     form.appendChild(div);
     if (!isError) {
-      setTimeout(function() { div.remove(); }, 5000);
+      setTimeout(function() { if (div.parentNode) div.remove(); }, 5000);
     }
   }
 
   function setLoading(button, loading) {
+    if (!button) return;
     if (loading) {
       button.dataset.originalText = button.textContent;
       button.textContent = 'Verzenden...';
@@ -40,7 +41,14 @@ var DV_WORDPRESS_URL = 'https://deverhuizing.nl';
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
     })
-    .then(function(r) { return r.json(); })
+    .then(function(r) {
+      if (!r.ok) {
+        return r.json().catch(function() { return { message: 'Server fout (' + r.status + ')' }; }).then(function(err) {
+          throw new Error(err.message || 'Er ging iets mis.');
+        });
+      }
+      return r.json();
+    })
     .then(function(result) {
       setLoading(button, false);
       if (result.success) {
@@ -50,9 +58,9 @@ var DV_WORDPRESS_URL = 'https://deverhuizing.nl';
         showMessage(form, result.message || 'Er ging iets mis. Probeer het opnieuw.', true);
       }
     })
-    .catch(function() {
+    .catch(function(err) {
       setLoading(button, false);
-      showMessage(form, 'Er ging iets mis met de verbinding. Probeer het opnieuw of bel ons op 070 7070341.', true);
+      showMessage(form, err.message || 'Er ging iets mis met de verbinding. Probeer het opnieuw of bel ons op 070 7070341.', true);
     });
   }
 
@@ -62,7 +70,7 @@ var DV_WORDPRESS_URL = 'https://deverhuizing.nl';
     if (quickForm) {
       quickForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        var btn = quickForm.querySelector('[data-testid="button-quick-submit"]') || quickForm.querySelector('button[type="submit"]');
+        var btn = quickForm.querySelector('[data-testid="button-quick-submit"]') || quickForm.querySelector('button[type="submit"]') || quickForm.querySelector('button');
         var data = {
           firstName: getVal(quickForm, 'firstName'),
           email: getVal(quickForm, 'email'),
@@ -78,72 +86,59 @@ var DV_WORDPRESS_URL = 'https://deverhuizing.nl';
       });
     }
 
-    var callbackForms = document.querySelectorAll('form');
-    callbackForms.forEach(function(form) {
+    var allForms = document.querySelectorAll('form');
+    allForms.forEach(function(form) {
       if (form === quickForm) return;
-      var firstNameField = form.querySelector('[data-testid="input-callback-firstname"]');
-      if (!firstNameField) return;
 
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        var btn = form.querySelector('[data-testid="button-callback-submit"]') || form.querySelector('button[type="submit"]');
-        var data = {
-          firstName: getVal(form, 'firstName'),
-          lastName: getVal(form, 'lastName'),
-          phone: getVal(form, 'phone'),
-          email: getVal(form, 'email'),
-          preferredTime: getVal(form, 'requestType')
-        };
-        if (!data.firstName || !data.phone) {
-          showMessage(form, 'Vul a.u.b. uw naam en telefoonnummer in.', true);
-          return;
-        }
-        submitToWP('callback', data, form, btn);
-      });
-    });
-
-    var quoteForm = document.querySelector('[data-testid="card-quote-form"]');
-    if (quoteForm) {
-      var actualForm = quoteForm.querySelector('form') || quoteForm.closest('form');
-      if (!actualForm) {
-        var forms = quoteForm.querySelectorAll('form');
-        actualForm = forms.length > 0 ? forms[0] : null;
-      }
-      if (!actualForm) {
-        var parentForms = document.querySelectorAll('form');
-        parentForms.forEach(function(f) {
-          if (f.querySelector('[data-testid="input-quote-firstname"]')) {
-            actualForm = f;
-          }
-        });
-      }
-
-      if (actualForm) {
-        actualForm.addEventListener('submit', function(e) {
+      var callbackFirstName = form.querySelector('[data-testid="input-callback-firstname"]');
+      if (callbackFirstName) {
+        form.addEventListener('submit', function(e) {
           e.preventDefault();
-          var btn = document.querySelector('[data-testid="button-quote-submit"]') || actualForm.querySelector('button[type="submit"]');
+          var btn = form.querySelector('[data-testid="button-callback-submit"]') || form.querySelector('button[type="submit"]') || form.querySelector('button');
           var data = {
-            firstName: getVal(actualForm, 'firstName'),
-            lastName: getVal(actualForm, 'lastName'),
-            email: getVal(actualForm, 'email'),
-            phone: getVal(actualForm, 'phone'),
-            moveFromAddress: getVal(actualForm, 'moveFromAddress'),
-            moveFromPostcode: getVal(actualForm, 'moveFromPostcode'),
-            moveFromCity: getVal(actualForm, 'moveFromCity'),
-            moveToAddress: getVal(actualForm, 'moveToAddress'),
-            moveToPostcode: getVal(actualForm, 'moveToPostcode'),
-            moveToCity: getVal(actualForm, 'moveToCity'),
-            moveType: getVal(actualForm, 'moveType'),
-            moveDate: getVal(actualForm, 'moveDate'),
-            additionalNotes: getVal(actualForm, 'additionalNotes')
+            firstName: getVal(form, 'firstName'),
+            lastName: getVal(form, 'lastName'),
+            phone: getVal(form, 'phone'),
+            email: getVal(form, 'email'),
+            preferredTime: getVal(form, 'requestType')
           };
-          if (!data.firstName || !data.email || !data.phone) {
-            showMessage(actualForm, 'Vul a.u.b. uw naam, e-mail en telefoonnummer in.', true);
+          if (!data.firstName || !data.phone) {
+            showMessage(form, 'Vul a.u.b. uw naam en telefoonnummer in.', true);
             return;
           }
-          submitToWP('quote', data, actualForm, btn);
+          submitToWP('callback', data, form, btn);
         });
+        return;
       }
-    }
+
+      var quoteFirstName = form.querySelector('[data-testid="input-quote-firstname"]');
+      if (quoteFirstName) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          var btn = form.querySelector('[data-testid="button-quote-submit"]') || form.querySelector('button[type="submit"]') || form.querySelector('button');
+          var data = {
+            firstName: getVal(form, 'firstName'),
+            lastName: getVal(form, 'lastName'),
+            email: getVal(form, 'email'),
+            phone: getVal(form, 'phone'),
+            moveFromAddress: getVal(form, 'moveFromAddress'),
+            moveFromPostcode: getVal(form, 'moveFromPostcode'),
+            moveFromCity: getVal(form, 'moveFromCity'),
+            moveToAddress: getVal(form, 'moveToAddress'),
+            moveToPostcode: getVal(form, 'moveToPostcode'),
+            moveToCity: getVal(form, 'moveToCity'),
+            moveType: getVal(form, 'moveType'),
+            moveDate: getVal(form, 'moveDate'),
+            additionalNotes: getVal(form, 'additionalNotes')
+          };
+          if (!data.firstName || !data.email || !data.phone) {
+            showMessage(form, 'Vul a.u.b. uw naam, e-mail en telefoonnummer in.', true);
+            return;
+          }
+          submitToWP('quote', data, form, btn);
+        });
+        return;
+      }
+    });
   });
 })();

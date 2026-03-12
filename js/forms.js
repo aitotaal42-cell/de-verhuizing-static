@@ -10,6 +10,46 @@ var DV_API_MODE = 'crm';
     return DV_API_URL + '/api/' + (map[endpoint] || endpoint);
   }
 
+  function showThankYouModal(type) {
+    var existing = document.getElementById('dv-thankyou-modal');
+    if (existing) existing.remove();
+
+    var titles = {
+      quote: 'Aanvraag ontvangen!',
+      callback: 'Terugbelverzoek ontvangen!',
+      contact: 'Bericht ontvangen!'
+    };
+    var messages = {
+      quote: 'Bedankt voor uw offerteaanvraag. We nemen binnen 24 uur contact met u op met een vrijblijvende offerte op maat.',
+      callback: 'Bedankt! We bellen u zo snel mogelijk terug op het opgegeven telefoonnummer.',
+      contact: 'Bedankt voor uw bericht. We reageren zo snel mogelijk, uiterlijk binnen 1 werkdag.'
+    };
+
+    var overlay = document.createElement('div');
+    overlay.id = 'dv-thankyou-modal';
+    overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(0,0,0,0.55);backdrop-filter:blur(4px);';
+
+    overlay.innerHTML =
+      '<div style="background:#fff;border-radius:16px;padding:40px 32px;max-width:440px;width:100%;text-align:center;box-shadow:0 25px 60px rgba(0,0,0,0.2);position:relative;">' +
+        '<div style="width:64px;height:64px;background:#f0fdf4;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">' +
+          '<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>' +
+        '</div>' +
+        '<h2 style="font-size:22px;font-weight:700;color:#1a3a5c;margin:0 0 12px;">' + (titles[type] || 'Bedankt!') + '</h2>' +
+        '<p style="font-size:15px;color:#64748b;line-height:1.6;margin:0 0 8px;">' + (messages[type] || 'Uw aanvraag is ontvangen.') + '</p>' +
+        '<p style="font-size:13px;color:#94a3b8;margin:0 0 28px;">Heeft u vragen? Bel ons op <a href="tel:0707070341" style="color:#e87c28;font-weight:600;text-decoration:none;">070 7070341</a></p>' +
+        '<button id="dv-modal-close" style="background:#e87c28;color:#fff;border:none;border-radius:8px;padding:12px 32px;font-size:15px;font-weight:600;cursor:pointer;width:100%;">Sluiten</button>' +
+      '</div>';
+
+    document.body.appendChild(overlay);
+
+    function closeModal() { if (overlay.parentNode) overlay.remove(); }
+    document.getElementById('dv-modal-close').addEventListener('click', closeModal);
+    overlay.addEventListener('click', function(e) { if (e.target === overlay) closeModal(); });
+    document.addEventListener('keydown', function handler(e) {
+      if (e.key === 'Escape') { closeModal(); document.removeEventListener('keydown', handler); }
+    });
+  }
+
   function showMessage(form, message, isError) {
     var existing = form.querySelector('.dv-form-message');
     if (existing) existing.remove();
@@ -61,8 +101,8 @@ var DV_API_MODE = 'crm';
     .then(function(result) {
       setLoading(button, false);
       if (result.success) {
-        showMessage(form, 'Bedankt! Uw aanvraag is succesvol verzonden. We nemen zo snel mogelijk contact met u op.', false);
         form.reset();
+        showThankYouModal(endpoint);
       } else {
         showMessage(form, result.message || 'Er ging iets mis. Probeer het opnieuw.', true);
       }

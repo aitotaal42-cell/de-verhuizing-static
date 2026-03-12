@@ -1,5 +1,5 @@
-var DV_API_URL = 'https://deverhuizing.nl';
-var DV_API_MODE = 'wordpress';
+var DV_API_URL = 'https://crm.deverhuizing.nl';
+var DV_API_MODE = 'crm';
 
 (function() {
   function getEndpointUrl(endpoint) {

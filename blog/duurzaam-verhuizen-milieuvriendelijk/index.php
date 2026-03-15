@@ -68,5 +68,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     
   
-<script src="../../js/header.php"></script>
+<script src="../../header.php"></script>
 </body></html>

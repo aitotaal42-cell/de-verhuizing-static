@@ -1,3 +1,4 @@
+<?php header("X-LiteSpeed-Cache-Control: no-store"); header("Cache-Control: no-cache, no-store, must-revalidate"); header("Pragma: no-cache"); ?>
 <!DOCTYPE html><html lang="nl"><head>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":

@@ -7,30 +7,88 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
 "https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,"script","dataLayer","GTM-TNH8Q34R");</script>
 <!-- End Google Tag Manager -->
-
-    
-
-    
-
-    
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>De Verhuizing | Verhuisbedrijf Zuid-Holland - Gratis Offerte Binnen 24 Uur</title>
-    <meta name="description" content="De Verhuizing is uw betrouwbare verhuisbedrijf in Zuid-Holland. Specialist in particuliere, zakelijke, senioren en internationale verhuizingen.">
-    <meta property="og:title" content="De Verhuizing | Verhuisbedrijf Zuid-Holland - Gratis Offerte Binnen 24 Uur">
-    <meta property="og:description" content="De Verhuizing is uw betrouwbare verhuisbedrijf in Zuid-Holland. Specialist in particuliere, zakelijke, senioren en internationale verhuizingen.">
-    <meta property="og:type" content="website">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#1a3a5c">
-    <link rel="canonical" href="https://deverhuizing.nl/">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    
-    
-    
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>De Verhuizing | Verhuisbedrijf Zuid-Holland - Gratis Offerte Binnen 24 Uur</title>
+  <meta name="description" content="De Verhuizing is uw betrouwbare verhuisbedrijf in Zuid-Holland. Specialist in particuliere, zakelijke, senioren en internationale verhuizingen.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://deverhuizing.nl/">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <meta name="theme-color" content="#1a3a5c">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://deverhuizing.nl/">
+  <meta property="og:title" content="De Verhuizing | Verhuisbedrijf Zuid-Holland - Gratis Offerte Binnen 24 Uur">
+  <meta property="og:description" content="De Verhuizing is uw betrouwbare verhuisbedrijf in Zuid-Holland. Specialist in particuliere, zakelijke, senioren en internationale verhuizingen.">
+  <meta property="og:image" content="https://deverhuizing.nl/images/hero-moving.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="De Verhuizing">
+  <meta property="og:locale" content="nl_NL">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="De Verhuizing | Verhuisbedrijf Zuid-Holland - Gratis Offerte Binnen 24 Uur">
+  <meta name="twitter:description" content="De Verhuizing is uw betrouwbare verhuisbedrijf in Zuid-Holland. Specialist in particuliere, zakelijke, senioren en internationale verhuizingen.">
+  <meta name="twitter:image" content="https://deverhuizing.nl/images/hero-moving.png">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": [
+    "MovingCompany",
+    "LocalBusiness"
+  ],
+  "name": "De Verhuizing",
+  "description": "Professioneel verhuisbedrijf in Zuid-Holland. Specialist in particuliere, zakelijke, senioren en internationale verhuizingen.",
+  "url": "https://deverhuizing.nl",
+  "telephone": [
+    "+31707070341",
+    "+31623552389"
+  ],
+  "email": "info@deverhuizing.nl",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Maasdijk",
+    "addressLocality": "Maasdijk",
+    "addressRegion": "Zuid-Holland",
+    "addressCountry": "NL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "51.9581",
+    "longitude": "4.2264"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "20:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "500",
+    "bestRating": "5"
+  },
+  "image": "https://deverhuizing.nl/images/hero-moving.png",
+  "priceRange": "€€",
+  "areaServed": {
+    "@type": "State",
+    "name": "Zuid-Holland"
+  },
+  "sameAs": [
+    "https://deverhuizing.nl"
+  ]
+}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
   <body>
 <!-- Google Tag Manager (noscript) -->

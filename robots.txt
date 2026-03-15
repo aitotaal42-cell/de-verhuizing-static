@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /crm/
+Disallow: /cache-clear/
+
 Sitemap: https://deverhuizing.nl/sitemap.xml

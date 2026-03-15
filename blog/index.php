@@ -7,30 +7,47 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
 "https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,"script","dataLayer","GTM-TNH8Q34R");</script>
 <!-- End Google Tag Manager -->
-
-    
-
-    
-
-    
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Verhuisblog | Tips, Advies & Informatie over Verhuizen | De Verhuizing</title>
-    <meta name="description" content="Lees onze verhuistips, handige checklists en advies over verhuizen. Van verhuiskosten tot inpaktips - alles wat u moet weten voor een succesvolle verhuizing.">
-    <meta property="og:title" content="Verhuisblog | Tips, Advies & Informatie over Verhuizen | De Verhuizing">
-    <meta property="og:description" content="Lees onze verhuistips, handige checklists en advies over verhuizen. Van verhuiskosten tot inpaktips - alles wat u moet weten voor een succesvolle verhuizing.">
-    <meta property="og:type" content="website">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#1a3a5c">
-    <link rel="canonical" href="https://deverhuizing.nl/">
-    <link rel="icon" type="image/png" href="../favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    
-    
-    
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verhuisblog | Tips, Advies & Informatie over Verhuizen | De Verhuizing</title>
+  <meta name="description" content="Lees onze verhuistips, handige checklists en advies over verhuizen. Van verhuiskosten tot inpaktips - alles wat u moet weten voor een succesvolle verhuizing.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://deverhuizing.nl/blog/">
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <meta name="theme-color" content="#1a3a5c">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://deverhuizing.nl/blog/">
+  <meta property="og:title" content="Verhuisblog | Tips, Advies & Informatie over Verhuizen | De Verhuizing">
+  <meta property="og:description" content="Lees onze verhuistips, handige checklists en advies over verhuizen. Van verhuiskosten tot inpaktips - alles wat u moet weten voor een succesvolle verhuizing.">
+  <meta property="og:image" content="https://deverhuizing.nl/images/hero-moving.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="De Verhuizing">
+  <meta property="og:locale" content="nl_NL">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Verhuisblog | Tips, Advies & Informatie over Verhuizen | De Verhuizing">
+  <meta name="twitter:description" content="Lees onze verhuistips, handige checklists en advies over verhuizen. Van verhuiskosten tot inpaktips - alles wat u moet weten voor een succesvolle verhuizing.">
+  <meta name="twitter:image" content="https://deverhuizing.nl/images/hero-moving.png">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "De Verhuizing Blog",
+  "description": "Tips, adviezen en gidsen over verhuizen in Nederland",
+  "url": "https://deverhuizing.nl/blog/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "De Verhuizing",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://deverhuizing.nl/images/hero-moving.png"
+    }
+  }
+}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
   <body>
 <!-- Google Tag Manager (noscript) -->

@@ -3,6 +3,8 @@ Options -Indexes
 AddType application/javascript .js
 AddType text/css .css
 
-<FilesMatch "\.(js|css|png|jpg|jpeg|svg|ico|woff|woff2|gif|webp)$">
-    Require all granted
+<FilesMatch "\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|webp)$">
+  Order Allow,Deny
+  Allow from all
+  Satisfy any
 </FilesMatch>

@@ -1,153 +1,196 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Hoofdpagina's -->
   <url>
     <loc>https://deverhuizing.nl/</loc>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://deverhuizing.nl/images/hero-moving.png</image:loc>
+      <image:title>De Verhuizing - Verhuisbedrijf Zuid-Holland</image:title>
+    </image:image>
   </url>
+
   <url>
-    <loc>https://deverhuizing.nl/offerte</loc>
+    <loc>https://deverhuizing.nl/offerte/</loc>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Blog overzicht -->
   <url>
-    <loc>https://deverhuizing.nl/blog</loc>
+    <loc>https://deverhuizing.nl/blog/</loc>
+    <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Blog artikelen -->
   <url>
-    <loc>https://deverhuizing.nl/blog/verhuizen-complete-gids-stressvrij</loc>
+    <loc>https://deverhuizing.nl/blog/verhuizen-complete-gids-stressvrij/</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://deverhuizing.nl/blog/verhuiskosten-berekenen-nederland/</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://deverhuizing.nl/blog/verhuistips-gezinnen-kinderen/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/verhuiskosten-berekenen-nederland</loc>
+    <loc>https://deverhuizing.nl/blog/particuliere-verhuizing-woning/</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://deverhuizing.nl/blog/zakelijke-verhuizing-bedrijf/</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://deverhuizing.nl/blog/seniorenverhuizing-op-latere-leeftijd/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/verhuistips-gezinnen-kinderen</loc>
+    <loc>https://deverhuizing.nl/blog/studentenverhuizing-goedkoop-snel/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/particuliere-verhuizing-woning</loc>
+    <loc>https://deverhuizing.nl/blog/internationaal-verhuizen-buitenland/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/zakelijke-verhuizing-bedrijf</loc>
+    <loc>https://deverhuizing.nl/blog/opslagruimte-huren-inboedel/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/seniorenverhuizing-op-latere-leeftijd</loc>
+    <loc>https://deverhuizing.nl/blog/verhuischecklist-niets-vergeten/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/studentenverhuizing-goedkoop-snel</loc>
+    <loc>https://deverhuizing.nl/blog/meubels-demonteren-monteren-verhuizen/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/internationaal-verhuizen-buitenland</loc>
+    <loc>https://deverhuizing.nl/blog/piano-verhuizen-specialistisch-transport/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/opslagruimte-huren-inboedel</loc>
+    <loc>https://deverhuizing.nl/blog/verhuislift-huren-wanneer-nodig/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/verhuischecklist-niets-vergeten</loc>
+    <loc>https://deverhuizing.nl/blog/inpakservice-verhuizen-professioneel/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/meubels-demonteren-monteren-verhuizen</loc>
+    <loc>https://deverhuizing.nl/blog/beste-verhuisbedrijf-kiezen-tips/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/piano-verhuizen-specialistisch-transport</loc>
+    <loc>https://deverhuizing.nl/blog/verhuizen-andere-stad-regelen/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/verhuislift-huren-wanneer-nodig</loc>
+    <loc>https://deverhuizing.nl/blog/duurzaam-verhuizen-milieuvriendelijk/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/inpakservice-verhuizen-professioneel</loc>
+    <loc>https://deverhuizing.nl/blog/verhuizen-huisdieren-tips/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/beste-verhuisbedrijf-kiezen-tips</loc>
+    <loc>https://deverhuizing.nl/blog/verhuizen-winter-tips/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/verhuizen-andere-stad-regelen</loc>
+    <loc>https://deverhuizing.nl/blog/verzekering-verhuizen-wat-gedekt/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/duurzaam-verhuizen-milieuvriendelijk</loc>
+    <loc>https://deverhuizing.nl/blog/verhuizen-zuid-holland-steden/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/verhuizen-huisdieren-tips</loc>
+    <loc>https://deverhuizing.nl/blog/verhuisbedrijf-maasdijk-westland/</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://deverhuizing.nl/blog/verhuizen-den-haag/</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://deverhuizing.nl/blog/spullen-niet-meenemen-verhuizing/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/verhuizen-winter-tips</loc>
+    <loc>https://deverhuizing.nl/blog/eerste-nacht-nieuwe-woning/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/verzekering-verhuizen-wat-gedekt</loc>
+    <loc>https://deverhuizing.nl/blog/verhuizen-administratie-overzetten/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deverhuizing.nl/blog/verhuizen-zuid-holland-steden</loc>
+    <loc>https://deverhuizing.nl/blog/verhuisdozen-types-hoeveel/</loc>
+    <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://deverhuizing.nl/blog/verhuisbedrijf-maasdijk-westland</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://deverhuizing.nl/blog/verhuizen-den-haag</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://deverhuizing.nl/blog/spullen-niet-meenemen-verhuizing</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://deverhuizing.nl/blog/eerste-nacht-nieuwe-woning</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://deverhuizing.nl/blog/verhuizen-administratie-overzetten</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://deverhuizing.nl/blog/verhuisdozen-types-hoeveel</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+
 </urlset>

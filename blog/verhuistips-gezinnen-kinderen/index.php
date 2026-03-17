@@ -119,10 +119,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       header.classList.add('bg-transparent');
     }
 
-    if (logo) {
-      logo.style.filter = 'brightness(0) invert(1)';
-    }
-
     function handleScroll() {
       if (window.scrollY > 20) {
         applyScrolled();
